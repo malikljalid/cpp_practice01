@@ -26,6 +26,7 @@ void function1(void)
 // Go to declaration of a fct()
 // Show call heirarchy of fct()
 // Find all references of fct()
+// Peal feature of all mentioned above 
 // Rename a function name and apply to the entire code
 
 int main(void)
