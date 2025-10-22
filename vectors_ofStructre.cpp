@@ -29,22 +29,22 @@ void printEmployee(stEmployee &Employee)
 
 int main(void)
 {
-    std::vector <stEmployee>    Employees;
+    std::vector <stEmployee>    vEmployees;
     stEmployee                  tmpEmployee;
 
     tmpEmployee = setEmployee("Zachariah", "The killer", 7000);
-    Employees.push_back(tmpEmployee);
+    vEmployees.push_back(tmpEmployee);
 
     tmpEmployee = setEmployee("Jack", "Lacroix", 100000);
-    Employees.push_back(tmpEmployee);
+    vEmployees.push_back(tmpEmployee);
 
     tmpEmployee = setEmployee("Lionel", "Andreas Messi", 800000);
-    Employees.push_back(tmpEmployee);
+    vEmployees.push_back(tmpEmployee);
 
-    Employees.push_back(setEmployee("Pep", "Guardiola", 40000));
-    Employees.push_back(setEmployee("Jose", "Murinho", 20000));
+    vEmployees.push_back(setEmployee("Pep", "Guardiola", 40000));
+    vEmployees.push_back(setEmployee("Jose", "Murinho", 20000));
 
-    for (stEmployee &Employee : Employees)
+    for (stEmployee &Employee : vEmployees)
         printEmployee(Employee);
 
     return (0);
