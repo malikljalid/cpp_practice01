@@ -59,7 +59,6 @@ void fillVector(std::vector<int> &vNumbers)
     
         userWantAddMore = askUserIfWantAddMore();
     }
-    printVector(vNumbers);
 }
 
 int main(void)
@@ -67,6 +66,7 @@ int main(void)
     std::vector<int> vNumbers;
 
     fillVector(vNumbers);
+    printVector(vNumbers);
 
     return (0);
 }
