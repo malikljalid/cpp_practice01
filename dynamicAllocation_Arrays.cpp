@@ -19,5 +19,7 @@ int main(void)
     for (int i = 0; i < StudentsNumber; i++)
         std::cout << "Student " << i + 1 << " Grade : " << StudentGrade[i] << std::endl;
 
+    delete[] StudentGrade;
+
     return (0);
 }
