@@ -5,7 +5,7 @@ int main(void)
 {
     std::fstream myFile;
 
-    myFile.open("doc.text", std::ios::out);
+    myFile.open("doc.text", std::ios::out);  // write mode : overwrite old data each time
 
     if (myFile.is_open())
     {
