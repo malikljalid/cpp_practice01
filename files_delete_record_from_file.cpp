@@ -75,9 +75,9 @@ void deleteRecordFromFile(std::string fileName, std::string Record)
 {
     std::vector <std::string> vFileContent;
 
-    loadFileToVector("doc.txt", vFileContent);
+    loadFileToVector(fileName, vFileContent);
     removeElemFromVector(vFileContent, Record);
-    saveVectorToFile("doc.txt", vFileContent);
+    saveVectorToFile(fileName, vFileContent);
 }
 
 int main(void)
